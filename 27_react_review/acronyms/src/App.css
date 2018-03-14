@@ -1,0 +1,9 @@
+img.card-img-top {
+  width: 200px;
+  height: 200px;
+}
+
+.acronym-list {
+  display: flex;
+  flex-flow: row wrap;
+}
