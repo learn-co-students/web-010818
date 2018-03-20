@@ -18,7 +18,16 @@ class AcronymForm extends Component {
     });
   };
 
+  // componentDidMount() {
+  //   console.log("AcronymF - Did Mount");
+  // }
+  //
+  // componentWillMount() {
+  //   console.log("AcronymF - Will Mount");
+  // }
+
   render() {
+    // console.log("AF - Render");
     return (
       <div className="col-lg-4">
         <form onSubmit={this.handleSubmit}>

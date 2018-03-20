@@ -62,4 +62,25 @@ Component Lifecycle methods provide us with a way of managing our components thr
 
 `componentDidCatch(error, info)`
 
-* Use this to catch _unexpected_ errors, don't use this for control flow. 
+* Use this to catch _unexpected_ errors, don't use this for control flow.
+
+
+
+
+
+
+
+
+AC- Will Mount
+AC - Render
+
+AL - Will Mount
+AL - Render
+AL - Did Mount
+
+AF - Will Mount
+AF - Render
+AF - Did Mount
+
+
+AC - Did Mount

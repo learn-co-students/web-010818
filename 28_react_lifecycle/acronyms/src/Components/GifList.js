@@ -9,4 +9,8 @@ export default class GifList extends Component {
     });
     return <div>{gifs}</div>;
   }
+
+  componentWilLReceiveProps(nextProps) {
+    console.log(nextProps);
+  }
 }

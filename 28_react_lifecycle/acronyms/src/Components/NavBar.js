@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 class NavBar extends Component {
   // state = {
@@ -23,6 +24,17 @@ class NavBar extends Component {
     return (
       <nav className="navbar navbar-inverse">
         <a className="navbar-brand">Acronymizer</a>
+        <NavLink
+          className="nav-item"
+          activeClassName="active"
+          activeStyle={{ backgroundColor: "blue" }}
+          to="/acronyms"
+        >
+          Acronyms
+        </NavLink>
+        <NavLink className="nav-item" to="/gifs">
+          Gifs
+        </NavLink>
         <form className="form-inline" onSubmit={this.handleSearch}>
           <input
             onChange={this.handleInputChange}
