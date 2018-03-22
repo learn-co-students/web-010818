@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-
+  skip_before_action :authorized, only: [:create]
   # POST /users
   #
   # { username: "beef", password: "steak"}
@@ -13,6 +13,10 @@ class UsersController < ApplicationController
       render json: {message: "Sucks to suck"}
     end
   end
+
+  def profile 
+    render json: current_user
+  end 
 
 end
 
